@@ -1,0 +1,1960 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cd4e6775addf21c3f2af50d9c9746168 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cd4e6775addf21c3f2af50d9c9746168" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cd4e6775addf21c3f2af50d9c9746168 = L.map(
+                "map_cd4e6775addf21c3f2af50d9c9746168",
+                {
+                    center: [46.724698863636355, 5.8442697500000005],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 9,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fce47b37a88a6a540960b69a8bd84ad8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_fce47b37a88a6a540960b69a8bd84ad8.addTo(map_cd4e6775addf21c3f2af50d9c9746168);
+        
+    
+            var tile_layer_82f86557e70a38bb4d2977c0f0ec1941 = L.tileLayer(
+                "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 17,
+  "maxNativeZoom": 17,
+  "noWrap": false,
+  "attribution": "Map data: \u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors, \u003ca href=\"http://viewfinderpanoramas.org\"\u003eSRTM\u003c/a\u003e | Map style: \u0026copy; \u003ca href=\"https://opentopomap.org\"\u003eOpenTopoMap\u003c/a\u003e (\u003ca href=\"https://creativecommons.org/licenses/by-sa/3.0/\"\u003eCC-BY-SA\u003c/a\u003e)",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            var tile_layer_ec5e4f1ec52b7fd33a70f0da1e44e7dd = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri \u0026mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            var feature_group_499b50a88da4d7206c778fe065022108 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cd8bcdf08f403ae06d9a0f2c0f58df33 = L.marker(
+                [46.4848, 6.059337],
+                {
+}
+            ).addTo(feature_group_499b50a88da4d7206c778fe065022108);
+        
+    
+            var icon_78576059c59a8da3dc38203942bf1e73 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "landmark",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aea64259ca24d83069b1456b15ac880e = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_46b222408a1041e9281908aa764a6b7f = $(`<div id="html_46b222408a1041e9281908aa764a6b7f" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Les Rousses</b><br>         Station-village du Haut-Jura     </div>     </div>`)[0];
+                popup_aea64259ca24d83069b1456b15ac880e.setContent(html_46b222408a1041e9281908aa764a6b7f);
+            
+        
+
+        marker_cd8bcdf08f403ae06d9a0f2c0f58df33.bindPopup(popup_aea64259ca24d83069b1456b15ac880e)
+        ;
+
+        
+    
+    
+                marker_cd8bcdf08f403ae06d9a0f2c0f58df33.setIcon(icon_78576059c59a8da3dc38203942bf1e73);
+            
+    
+            var marker_ec0d09d4e2bb3818d4af30e8b6b8afed = L.marker(
+                [46.502169, 6.080777],
+                {
+}
+            ).addTo(feature_group_499b50a88da4d7206c778fe065022108);
+        
+    
+            var icon_63c349e0bcdddb2737a29f895fdc7759 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_40e3f444ab5dc38e2668a4b5f51c6e4e = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_f0f13735d20cf057fcd2aad30ef997ee = $(`<div id="html_f0f13735d20cf057fcd2aad30ef997ee" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Lac des Rousses</b><br>         Très agréable pour une promenade     </div>     </div>`)[0];
+                popup_40e3f444ab5dc38e2668a4b5f51c6e4e.setContent(html_f0f13735d20cf057fcd2aad30ef997ee);
+            
+        
+
+        marker_ec0d09d4e2bb3818d4af30e8b6b8afed.bindPopup(popup_40e3f444ab5dc38e2668a4b5f51c6e4e)
+        ;
+
+        
+    
+    
+                marker_ec0d09d4e2bb3818d4af30e8b6b8afed.setIcon(icon_63c349e0bcdddb2737a29f895fdc7759);
+            
+    
+            var marker_e2e8a74d3026004f2a534f07e9badb10 = L.marker(
+                [46.47915, 6.056],
+                {
+}
+            ).addTo(feature_group_499b50a88da4d7206c778fe065022108);
+        
+    
+            var icon_b38f05ab6fd670ae312335428a46db65 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "landmark",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba5b6728de6a60e7201f920ddebfe814 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_99ffed509902329b76684ebffecbbf31 = $(`<div id="html_99ffed509902329b76684ebffecbbf31" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Fort des Rousses</b><br>         Immense fort militaire et caves d'affinage     </div>     </div>`)[0];
+                popup_ba5b6728de6a60e7201f920ddebfe814.setContent(html_99ffed509902329b76684ebffecbbf31);
+            
+        
+
+        marker_e2e8a74d3026004f2a534f07e9badb10.bindPopup(popup_ba5b6728de6a60e7201f920ddebfe814)
+        ;
+
+        
+    
+    
+                marker_e2e8a74d3026004f2a534f07e9badb10.setIcon(icon_b38f05ab6fd670ae312335428a46db65);
+            
+    
+            feature_group_499b50a88da4d7206c778fe065022108.addTo(map_cd4e6775addf21c3f2af50d9c9746168);
+        
+    
+            var feature_group_bedd483c976137b6bb83a2e08ca31d1d = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_be1682531ec966e52218efc480a3bba9 = L.marker(
+                [46.350687, 5.891656],
+                {
+}
+            ).addTo(feature_group_bedd483c976137b6bb83a2e08ca31d1d);
+        
+    
+            var icon_63692f354128fa8b40f7003214b162ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b1f55a0a14ca7f0fecdf5d7f650861eb = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_d2ca603cd92cfbd7230e3d27d6dae9c8 = $(`<div id="html_d2ca603cd92cfbd7230e3d27d6dae9c8" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Belvédère de la Roche Blanche</b><br>         Magnifique point de vue sur les gorges     </div>     </div>`)[0];
+                popup_b1f55a0a14ca7f0fecdf5d7f650861eb.setContent(html_d2ca603cd92cfbd7230e3d27d6dae9c8);
+            
+        
+
+        marker_be1682531ec966e52218efc480a3bba9.bindPopup(popup_b1f55a0a14ca7f0fecdf5d7f650861eb)
+        ;
+
+        
+    
+    
+                marker_be1682531ec966e52218efc480a3bba9.setIcon(icon_63692f354128fa8b40f7003214b162ea);
+            
+    
+            var marker_b54d66ff5c779497a60ec81e5b03650b = L.marker(
+                [46.386788, 5.866566],
+                {
+}
+            ).addTo(feature_group_bedd483c976137b6bb83a2e08ca31d1d);
+        
+    
+            var icon_13cefddc46e669a997ae059f8fd0b1d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "landmark",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71f4204f79870d08c213b5cbc49728c7 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_8d71664d97cce5f365b0137177082fd1 = $(`<div id="html_8d71664d97cce5f365b0137177082fd1" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Saint-Claude</b><br>              </div>     </div>`)[0];
+                popup_71f4204f79870d08c213b5cbc49728c7.setContent(html_8d71664d97cce5f365b0137177082fd1);
+            
+        
+
+        marker_b54d66ff5c779497a60ec81e5b03650b.bindPopup(popup_71f4204f79870d08c213b5cbc49728c7)
+        ;
+
+        
+    
+    
+                marker_b54d66ff5c779497a60ec81e5b03650b.setIcon(icon_13cefddc46e669a997ae059f8fd0b1d6);
+            
+    
+            var marker_c40b5a950b958b5438f509b6c642619f = L.marker(
+                [46.431198, 5.725723],
+                {
+}
+            ).addTo(feature_group_bedd483c976137b6bb83a2e08ca31d1d);
+        
+    
+            var icon_15b5d7e991c2500eeef51b3685dde90f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "landmark",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f29cd656175e48e1b19b7b5ee0ce873 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_86af0fed2b33a1025804c96d89a2462d = $(`<div id="html_86af0fed2b33a1025804c96d89a2462d" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Moirans en Montagne</b><br>         Musée du jouet     </div>     </div>`)[0];
+                popup_3f29cd656175e48e1b19b7b5ee0ce873.setContent(html_86af0fed2b33a1025804c96d89a2462d);
+            
+        
+
+        marker_c40b5a950b958b5438f509b6c642619f.bindPopup(popup_3f29cd656175e48e1b19b7b5ee0ce873)
+        ;
+
+        
+    
+    
+                marker_c40b5a950b958b5438f509b6c642619f.setIcon(icon_15b5d7e991c2500eeef51b3685dde90f);
+            
+    
+            var marker_499a6492592bc0d8628f951e05c96a96 = L.marker(
+                [46.484808, 5.679309],
+                {
+}
+            ).addTo(feature_group_bedd483c976137b6bb83a2e08ca31d1d);
+        
+    
+            var icon_08346bc4e2060abda8d19b752648499c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_baf383f9a59daf12134fe49e1ca484a1 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_544d9949f749138d32c2750b1da28a06 = $(`<div id="html_544d9949f749138d32c2750b1da28a06" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Lac de Vouglans</b><br>              </div>     </div>`)[0];
+                popup_baf383f9a59daf12134fe49e1ca484a1.setContent(html_544d9949f749138d32c2750b1da28a06);
+            
+        
+
+        marker_499a6492592bc0d8628f951e05c96a96.bindPopup(popup_baf383f9a59daf12134fe49e1ca484a1)
+        ;
+
+        
+    
+    
+                marker_499a6492592bc0d8628f951e05c96a96.setIcon(icon_08346bc4e2060abda8d19b752648499c);
+            
+    
+            feature_group_bedd483c976137b6bb83a2e08ca31d1d.addTo(map_cd4e6775addf21c3f2af50d9c9746168);
+        
+    
+            var feature_group_09aaf31fbeef32a58973cb02645727c8 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_dea64d2983e2eee5c6e7a3eb2b513594 = L.marker(
+                [46.659458, 6.003032],
+                {
+}
+            ).addTo(feature_group_09aaf31fbeef32a58973cb02645727c8);
+        
+    
+            var icon_cbf09ecbe3bf5a86c1ab038686d5ecfc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_362f69a59048ee4f8c336d0942b0368f = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_dbf310373812dcd1045b1797bb7bc563 = $(`<div id="html_dbf310373812dcd1045b1797bb7bc563" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Gorges de la Langouette</b><br>         Impressionnantes gorges creusées dans la roche     </div>     </div>`)[0];
+                popup_362f69a59048ee4f8c336d0942b0368f.setContent(html_dbf310373812dcd1045b1797bb7bc563);
+            
+        
+
+        marker_dea64d2983e2eee5c6e7a3eb2b513594.bindPopup(popup_362f69a59048ee4f8c336d0942b0368f)
+        ;
+
+        
+    
+    
+                marker_dea64d2983e2eee5c6e7a3eb2b513594.setIcon(icon_cbf09ecbe3bf5a86c1ab038686d5ecfc);
+            
+    
+            var marker_282c4ecc4cb5e2f431dc03dec6fde271 = L.marker(
+                [46.680952, 5.937884],
+                {
+}
+            ).addTo(feature_group_09aaf31fbeef32a58973cb02645727c8);
+        
+    
+            var icon_2c3b8f5916bd146804285f61d84633c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_75e6626cbfe78528b2cb04a678bdd7ae = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_4cf94baca1ede4fdb8f43d9caf3cdf04 = $(`<div id="html_4cf94baca1ede4fdb8f43d9caf3cdf04" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Cascade de la Billaude</b><br>              </div>     </div>`)[0];
+                popup_75e6626cbfe78528b2cb04a678bdd7ae.setContent(html_4cf94baca1ede4fdb8f43d9caf3cdf04);
+            
+        
+
+        marker_282c4ecc4cb5e2f431dc03dec6fde271.bindPopup(popup_75e6626cbfe78528b2cb04a678bdd7ae)
+        ;
+
+        
+    
+    
+                marker_282c4ecc4cb5e2f431dc03dec6fde271.setIcon(icon_2c3b8f5916bd146804285f61d84633c6);
+            
+    
+            var marker_3aca1e57033ad03de6b6dc4654704580 = L.marker(
+                [46.586373, 5.873454],
+                {
+}
+            ).addTo(feature_group_09aaf31fbeef32a58973cb02645727c8);
+        
+    
+            var icon_660ad138d50c04659d9271fa092ffe4b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2b239fe98f6f37b1d373e547c5fa9d96 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_68d2c12f0918eb172cc5243c20990b11 = $(`<div id="html_68d2c12f0918eb172cc5243c20990b11" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Lac de Bonlieu</b><br>         Un des plus beaux paysages du département     </div>     </div>`)[0];
+                popup_2b239fe98f6f37b1d373e547c5fa9d96.setContent(html_68d2c12f0918eb172cc5243c20990b11);
+            
+        
+
+        marker_3aca1e57033ad03de6b6dc4654704580.bindPopup(popup_2b239fe98f6f37b1d373e547c5fa9d96)
+        ;
+
+        
+    
+    
+                marker_3aca1e57033ad03de6b6dc4654704580.setIcon(icon_660ad138d50c04659d9271fa092ffe4b);
+            
+    
+            var marker_2316ff3ab1099bdbeab9de8edeca67d8 = L.marker(
+                [46.614531, 5.902023],
+                {
+}
+            ).addTo(feature_group_09aaf31fbeef32a58973cb02645727c8);
+        
+    
+            var icon_2a2606927d6946744c925717737e8a32 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_76abe285a11ec3c373e153c5723c20db = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_adc6e31aef98a71ef083ce37e6013431 = $(`<div id="html_adc6e31aef98a71ef083ce37e6013431" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Pic de l'Aigle</b><br>         Panorama exceptionnel sur les lacs     </div>     </div>`)[0];
+                popup_76abe285a11ec3c373e153c5723c20db.setContent(html_adc6e31aef98a71ef083ce37e6013431);
+            
+        
+
+        marker_2316ff3ab1099bdbeab9de8edeca67d8.bindPopup(popup_76abe285a11ec3c373e153c5723c20db)
+        ;
+
+        
+    
+    
+                marker_2316ff3ab1099bdbeab9de8edeca67d8.setIcon(icon_2a2606927d6946744c925717737e8a32);
+            
+    
+            var marker_f35bc37e30db3416b13319e92c670000 = L.marker(
+                [46.626134, 5.91304],
+                {
+}
+            ).addTo(feature_group_09aaf31fbeef32a58973cb02645727c8);
+        
+    
+            var icon_41133f506b2cb01f91f02e61800cc4a3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a73668e012ca8ae92f614271d4ca1c3f = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_455371ef5d580f9a29caf296a816597d = $(`<div id="html_455371ef5d580f9a29caf296a816597d" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Belvédère des Quatre Lacs</b><br>         Vue iconique sur plusieurs lacs, à côté du pic de l'aigle     </div>     </div>`)[0];
+                popup_a73668e012ca8ae92f614271d4ca1c3f.setContent(html_455371ef5d580f9a29caf296a816597d);
+            
+        
+
+        marker_f35bc37e30db3416b13319e92c670000.bindPopup(popup_a73668e012ca8ae92f614271d4ca1c3f)
+        ;
+
+        
+    
+    
+                marker_f35bc37e30db3416b13319e92c670000.setIcon(icon_41133f506b2cb01f91f02e61800cc4a3);
+            
+    
+            feature_group_09aaf31fbeef32a58973cb02645727c8.addTo(map_cd4e6775addf21c3f2af50d9c9746168);
+        
+    
+            var feature_group_83999cc4d806224dc00585b3cbb18485 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_81b16493bfa30b8e96b6a5fb17e45a37 = L.marker(
+                [46.572797, 5.749155],
+                {
+}
+            ).addTo(feature_group_83999cc4d806224dc00585b3cbb18485);
+        
+    
+            var icon_a17d8b0bea05fef371e93c3401233a32 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_61e8de14cc38680a1d167c040aa51f98 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_326dd224bd91dde75b641b0c1c700a91 = $(`<div id="html_326dd224bd91dde75b641b0c1c700a91" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Lac de Clairvaux</b><br>         Idéal pour une promenade au bord de l'eau et un moment de détente     </div>     </div>`)[0];
+                popup_61e8de14cc38680a1d167c040aa51f98.setContent(html_326dd224bd91dde75b641b0c1c700a91);
+            
+        
+
+        marker_81b16493bfa30b8e96b6a5fb17e45a37.bindPopup(popup_61e8de14cc38680a1d167c040aa51f98)
+        ;
+
+        
+    
+    
+                marker_81b16493bfa30b8e96b6a5fb17e45a37.setIcon(icon_a17d8b0bea05fef371e93c3401233a32);
+            
+    
+            var marker_af236c08b572049d0af95a6baec85f8c = L.marker(
+                [46.585677, 5.697181],
+                {
+}
+            ).addTo(feature_group_83999cc4d806224dc00585b3cbb18485);
+        
+    
+            var icon_236fd67fea56e7409858d1d3670a40a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "landmark",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_84f3b19b3511bef9c8621670b1479a3e = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_e5b3056ad5d762650e55de5321f71008 = $(`<div id="html_e5b3056ad5d762650e55de5321f71008" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Pont de Poitte</b><br>              </div>     </div>`)[0];
+                popup_84f3b19b3511bef9c8621670b1479a3e.setContent(html_e5b3056ad5d762650e55de5321f71008);
+            
+        
+
+        marker_af236c08b572049d0af95a6baec85f8c.bindPopup(popup_84f3b19b3511bef9c8621670b1479a3e)
+        ;
+
+        
+    
+    
+                marker_af236c08b572049d0af95a6baec85f8c.setIcon(icon_236fd67fea56e7409858d1d3670a40a8);
+            
+    
+            var marker_2cc419ba2cf02c01d2d1dbed63b0fac9 = L.marker(
+                [46.613622, 5.849997],
+                {
+}
+            ).addTo(feature_group_83999cc4d806224dc00585b3cbb18485);
+        
+    
+            var icon_e118b1145206f088d6289e99d08cca09 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ec46053ba6ad6a6628bff940baf94af = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_5023ceb1e2661851bbddaf70a893131a = $(`<div id="html_5023ceb1e2661851bbddaf70a893131a" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Cascades du Hérisson</b><br>         La randonnée emblématique du Jura avec plusieurs cascades successives     </div>     </div>`)[0];
+                popup_3ec46053ba6ad6a6628bff940baf94af.setContent(html_5023ceb1e2661851bbddaf70a893131a);
+            
+        
+
+        marker_2cc419ba2cf02c01d2d1dbed63b0fac9.bindPopup(popup_3ec46053ba6ad6a6628bff940baf94af)
+        ;
+
+        
+    
+    
+                marker_2cc419ba2cf02c01d2d1dbed63b0fac9.setIcon(icon_e118b1145206f088d6289e99d08cca09);
+            
+    
+            var marker_a634d5f0fe361be67f304c16a5635fe8 = L.marker(
+                [46.670777, 5.78879],
+                {
+}
+            ).addTo(feature_group_83999cc4d806224dc00585b3cbb18485);
+        
+    
+            var icon_7fc4dc5b0461d988e4c24f09364d3f8f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_34767d68453b94f6fd15137aeeae2c74 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_e5742c10dd49317b743e56c17f1a28a9 = $(`<div id="html_e5742c10dd49317b743e56c17f1a28a9" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Lac de Chalain</b><br>         Le plus grand lac naturel du Jura     </div>     </div>`)[0];
+                popup_34767d68453b94f6fd15137aeeae2c74.setContent(html_e5742c10dd49317b743e56c17f1a28a9);
+            
+        
+
+        marker_a634d5f0fe361be67f304c16a5635fe8.bindPopup(popup_34767d68453b94f6fd15137aeeae2c74)
+        ;
+
+        
+    
+    
+                marker_a634d5f0fe361be67f304c16a5635fe8.setIcon(icon_7fc4dc5b0461d988e4c24f09364d3f8f);
+            
+    
+            feature_group_83999cc4d806224dc00585b3cbb18485.addTo(map_cd4e6775addf21c3f2af50d9c9746168);
+        
+    
+            var feature_group_d30309ce410356e77432cee542ee3493 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_2f95a8b633a2b55571443433f2051fb4 = L.marker(
+                [46.711392, 5.644128],
+                {
+}
+            ).addTo(feature_group_d30309ce410356e77432cee542ee3493);
+        
+    
+            var icon_41d5af27019e55da81cb0137330b9a9d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "landmark",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_021884e6b4acc11b41325ba3bc30bf6d = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_4416ad20b2d05e4dc53cdd1239235409 = $(`<div id="html_4416ad20b2d05e4dc53cdd1239235409" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Baume-les-Messieurs</b><br>         Plus Beaux Villages de France     </div>     </div>`)[0];
+                popup_021884e6b4acc11b41325ba3bc30bf6d.setContent(html_4416ad20b2d05e4dc53cdd1239235409);
+            
+        
+
+        marker_2f95a8b633a2b55571443433f2051fb4.bindPopup(popup_021884e6b4acc11b41325ba3bc30bf6d)
+        ;
+
+        
+    
+    
+                marker_2f95a8b633a2b55571443433f2051fb4.setIcon(icon_41d5af27019e55da81cb0137330b9a9d);
+            
+    
+            var marker_bdf04b7271c369d3c676842d3c617524 = L.marker(
+                [46.708712, 5.648092],
+                {
+}
+            ).addTo(feature_group_d30309ce410356e77432cee542ee3493);
+        
+    
+            var icon_13a5d391fe38e123e2208a4ba20e970f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "landmark",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4824ffe42b73a6a7a615afc67cf7798c = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_9756517b6dd10c16745aaeee9c885426 = $(`<div id="html_9756517b6dd10c16745aaeee9c885426" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Abbaye de Baume-les-Messieurs</b><br>         Joyau de l'art roman     </div>     </div>`)[0];
+                popup_4824ffe42b73a6a7a615afc67cf7798c.setContent(html_9756517b6dd10c16745aaeee9c885426);
+            
+        
+
+        marker_bdf04b7271c369d3c676842d3c617524.bindPopup(popup_4824ffe42b73a6a7a615afc67cf7798c)
+        ;
+
+        
+    
+    
+                marker_bdf04b7271c369d3c676842d3c617524.setIcon(icon_13a5d391fe38e123e2208a4ba20e970f);
+            
+    
+            var marker_a159b1a4d31c9b151e99762275bfb7ba = L.marker(
+                [46.690971, 5.639839],
+                {
+}
+            ).addTo(feature_group_d30309ce410356e77432cee542ee3493);
+        
+    
+            var icon_4ac190299bac6737e1e3c8cd1163a50c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ac5e7f98a70e848b63c470d5d1dc11ee = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_0d5ab3c4bd772223e6a9a0fb49cf2ad0 = $(`<div id="html_0d5ab3c4bd772223e6a9a0fb49cf2ad0" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Reculée de Baume-les-Messieurs</b><br>         Une vallée spectaculaire entourée de falaises     </div>     </div>`)[0];
+                popup_ac5e7f98a70e848b63c470d5d1dc11ee.setContent(html_0d5ab3c4bd772223e6a9a0fb49cf2ad0);
+            
+        
+
+        marker_a159b1a4d31c9b151e99762275bfb7ba.bindPopup(popup_ac5e7f98a70e848b63c470d5d1dc11ee)
+        ;
+
+        
+    
+    
+                marker_a159b1a4d31c9b151e99762275bfb7ba.setIcon(icon_4ac190299bac6737e1e3c8cd1163a50c);
+            
+    
+            var marker_b2f6223b722723e780cc91daac24240e = L.marker(
+                [46.75563, 5.62564],
+                {
+}
+            ).addTo(feature_group_d30309ce410356e77432cee542ee3493);
+        
+    
+            var icon_3f162af4ccc3c62251c01a57ad81aac4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "landmark",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85fd6a3578d9e345f988e0279f89c705 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_66d5c6f831074d69df1cc661ece3e8a1 = $(`<div id="html_66d5c6f831074d69df1cc661ece3e8a1" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Château-Chalon</b><br>         Village perché      </div>     </div>`)[0];
+                popup_85fd6a3578d9e345f988e0279f89c705.setContent(html_66d5c6f831074d69df1cc661ece3e8a1);
+            
+        
+
+        marker_b2f6223b722723e780cc91daac24240e.bindPopup(popup_85fd6a3578d9e345f988e0279f89c705)
+        ;
+
+        
+    
+    
+                marker_b2f6223b722723e780cc91daac24240e.setIcon(icon_3f162af4ccc3c62251c01a57ad81aac4);
+            
+    
+            feature_group_d30309ce410356e77432cee542ee3493.addTo(map_cd4e6775addf21c3f2af50d9c9746168);
+        
+    
+            var feature_group_759bdeb183d9de3aa5bfc4a1f5919746 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_c7bff9e7e8bbb0125af7a6808a3ee526 = L.marker(
+                [46.762045, 6.024662],
+                {
+}
+            ).addTo(feature_group_759bdeb183d9de3aa5bfc4a1f5919746);
+        
+    
+            var icon_1f09b40fc2a0d80a80e34bce42263c7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_01b75d713e85de4338f6401fad26781a = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_d53bb652fe567a11260d1eb77d68315b = $(`<div id="html_d53bb652fe567a11260d1eb77d68315b" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Haute Vallée de la Saine</b><br>              </div>     </div>`)[0];
+                popup_01b75d713e85de4338f6401fad26781a.setContent(html_d53bb652fe567a11260d1eb77d68315b);
+            
+        
+
+        marker_c7bff9e7e8bbb0125af7a6808a3ee526.bindPopup(popup_01b75d713e85de4338f6401fad26781a)
+        ;
+
+        
+    
+    
+                marker_c7bff9e7e8bbb0125af7a6808a3ee526.setIcon(icon_1f09b40fc2a0d80a80e34bce42263c7f);
+            
+    
+            var marker_c2dc371ff9de1122c6e53ca1e777d6e8 = L.marker(
+                [46.72802, 5.959344],
+                {
+}
+            ).addTo(feature_group_759bdeb183d9de3aa5bfc4a1f5919746);
+        
+    
+            var icon_be292f256089c029154e845d389a916f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "landmark",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_791a708c5c073af36b9e3410316b9dcb = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_99c46d6556f1210322623b77ed854b6d = $(`<div id="html_99c46d6556f1210322623b77ed854b6d" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Bourg-de-Sirod</b><br>              </div>     </div>`)[0];
+                popup_791a708c5c073af36b9e3410316b9dcb.setContent(html_99c46d6556f1210322623b77ed854b6d);
+            
+        
+
+        marker_c2dc371ff9de1122c6e53ca1e777d6e8.bindPopup(popup_791a708c5c073af36b9e3410316b9dcb)
+        ;
+
+        
+    
+    
+                marker_c2dc371ff9de1122c6e53ca1e777d6e8.setIcon(icon_be292f256089c029154e845d389a916f);
+            
+    
+            var marker_c5af446dd21874ad681bb1f60ddc4cf4 = L.marker(
+                [46.745817, 5.907659],
+                {
+}
+            ).addTo(feature_group_759bdeb183d9de3aa5bfc4a1f5919746);
+        
+    
+            var icon_773e653cc6376c554c8576f5182ef3db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "landmark",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ecf913837eddede54f5565ddbafc0217 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_1f6212e8d6f63a9108c4a9a3e9fb1b88 = $(`<div id="html_1f6212e8d6f63a9108c4a9a3e9fb1b88" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Champagnole</b><br>              </div>     </div>`)[0];
+                popup_ecf913837eddede54f5565ddbafc0217.setContent(html_1f6212e8d6f63a9108c4a9a3e9fb1b88);
+            
+        
+
+        marker_c5af446dd21874ad681bb1f60ddc4cf4.bindPopup(popup_ecf913837eddede54f5565ddbafc0217)
+        ;
+
+        
+    
+    
+                marker_c5af446dd21874ad681bb1f60ddc4cf4.setIcon(icon_773e653cc6376c554c8576f5182ef3db);
+            
+    
+            var marker_91efdf9b2f16c53cae0191b6d8db8a64 = L.marker(
+                [46.708117, 5.881381],
+                {
+}
+            ).addTo(feature_group_759bdeb183d9de3aa5bfc4a1f5919746);
+        
+    
+            var icon_91faa52ea839a991b6aaaf0e720a0296 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "landmark",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1ad3276b283b802b4254b1b93f4618d5 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_17ab04fce45369fbe8d373d9485296c2 = $(`<div id="html_17ab04fce45369fbe8d373d9485296c2" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Loulle</b><br>         piste à dinosaures     </div>     </div>`)[0];
+                popup_1ad3276b283b802b4254b1b93f4618d5.setContent(html_17ab04fce45369fbe8d373d9485296c2);
+            
+        
+
+        marker_91efdf9b2f16c53cae0191b6d8db8a64.bindPopup(popup_1ad3276b283b802b4254b1b93f4618d5)
+        ;
+
+        
+    
+    
+                marker_91efdf9b2f16c53cae0191b6d8db8a64.setIcon(icon_91faa52ea839a991b6aaaf0e720a0296);
+            
+    
+            var marker_50e160d8e7709917de8f024e538e27cd = L.marker(
+                [46.775041, 6.034345],
+                {
+}
+            ).addTo(feature_group_759bdeb183d9de3aa5bfc4a1f5919746);
+        
+    
+            var icon_daae3a3bfd57ba59d30ec3676974f612 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "landmark",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c9a1ffb51ad3372ba6a5b1b24f4e3b42 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_80369e3b11401e1d1bf27554e7b8bb7e = $(`<div id="html_80369e3b11401e1d1bf27554e7b8bb7e" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Nozeroy</b><br>         Ancienne cité médiévale     </div>     </div>`)[0];
+                popup_c9a1ffb51ad3372ba6a5b1b24f4e3b42.setContent(html_80369e3b11401e1d1bf27554e7b8bb7e);
+            
+        
+
+        marker_50e160d8e7709917de8f024e538e27cd.bindPopup(popup_c9a1ffb51ad3372ba6a5b1b24f4e3b42)
+        ;
+
+        
+    
+    
+                marker_50e160d8e7709917de8f024e538e27cd.setIcon(icon_daae3a3bfd57ba59d30ec3676974f612);
+            
+    
+            feature_group_759bdeb183d9de3aa5bfc4a1f5919746.addTo(map_cd4e6775addf21c3f2af50d9c9746168);
+        
+    
+            var feature_group_087c833914d2a9d578cfa8a16275f86c = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_bbd5f571d7f9ad12beb9da0194ada4df = L.marker(
+                [46.902514, 5.772295],
+                {
+}
+            ).addTo(feature_group_087c833914d2a9d578cfa8a16275f86c);
+        
+    
+            var icon_e0cbc020efad15e5a8ec38ff72276c22 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "landmark",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c077096e320ad1bcadcace6c4f7e1fce = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_a425360a6703c591f66560f34671f8c0 = $(`<div id="html_a425360a6703c591f66560f34671f8c0" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Arbois</b><br>         Capitale des vins du Jura     </div>     </div>`)[0];
+                popup_c077096e320ad1bcadcace6c4f7e1fce.setContent(html_a425360a6703c591f66560f34671f8c0);
+            
+        
+
+        marker_bbd5f571d7f9ad12beb9da0194ada4df.bindPopup(popup_c077096e320ad1bcadcace6c4f7e1fce)
+        ;
+
+        
+    
+    
+                marker_bbd5f571d7f9ad12beb9da0194ada4df.setIcon(icon_e0cbc020efad15e5a8ec38ff72276c22);
+            
+    
+            var marker_4bb39d351cd031fae15e5bb2ef3e0d3c = L.marker(
+                [46.906611, 5.769614],
+                {
+}
+            ).addTo(feature_group_087c833914d2a9d578cfa8a16275f86c);
+        
+    
+            var icon_2e979f6e91c0b288877ddd5aadbfb389 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "landmark",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a8e810c412b138138c406498645a30cf = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_9de692005b2d07285ee76dbc4368c707 = $(`<div id="html_9de692005b2d07285ee76dbc4368c707" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Maison de Louis Pasteur</b><br>         À Arbois, demeure du célèbre scientifique     </div>     </div>`)[0];
+                popup_a8e810c412b138138c406498645a30cf.setContent(html_9de692005b2d07285ee76dbc4368c707);
+            
+        
+
+        marker_4bb39d351cd031fae15e5bb2ef3e0d3c.bindPopup(popup_a8e810c412b138138c406498645a30cf)
+        ;
+
+        
+    
+    
+                marker_4bb39d351cd031fae15e5bb2ef3e0d3c.setIcon(icon_2e979f6e91c0b288877ddd5aadbfb389);
+            
+    
+            var marker_7edf3ab94dbf765038d36879cd8d003d = L.marker(
+                [46.880567, 5.804408],
+                {
+}
+            ).addTo(feature_group_087c833914d2a9d578cfa8a16275f86c);
+        
+    
+            var icon_e08912b4473db2f9e4c806898c7bfdf9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_463c82c7ba9817e500cc9bc042b6a419 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_3a661160242190aa985765443fbeb645 = $(`<div id="html_3a661160242190aa985765443fbeb645" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Reculée des Planches</b><br>         Plus sauvage, avec une belle cascade     </div>     </div>`)[0];
+                popup_463c82c7ba9817e500cc9bc042b6a419.setContent(html_3a661160242190aa985765443fbeb645);
+            
+        
+
+        marker_7edf3ab94dbf765038d36879cd8d003d.bindPopup(popup_463c82c7ba9817e500cc9bc042b6a419)
+        ;
+
+        
+    
+    
+                marker_7edf3ab94dbf765038d36879cd8d003d.setIcon(icon_e08912b4473db2f9e4c806898c7bfdf9);
+            
+    
+            var marker_4742da037b6ab7d5c538074f905b1515 = L.marker(
+                [46.837272, 5.709082],
+                {
+}
+            ).addTo(feature_group_087c833914d2a9d578cfa8a16275f86c);
+        
+    
+            var icon_91f1db325d88a483e35bcdca0e98f588 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "landmark",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dc9fd3c4a29b54ae936e21569f393cee = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_3d25bcf04354a3479229c4aca6295b6d = $(`<div id="html_3d25bcf04354a3479229c4aca6295b6d" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Poligny</b><br>         Capitale du Comté     </div>     </div>`)[0];
+                popup_dc9fd3c4a29b54ae936e21569f393cee.setContent(html_3d25bcf04354a3479229c4aca6295b6d);
+            
+        
+
+        marker_4742da037b6ab7d5c538074f905b1515.bindPopup(popup_dc9fd3c4a29b54ae936e21569f393cee)
+        ;
+
+        
+    
+    
+                marker_4742da037b6ab7d5c538074f905b1515.setIcon(icon_91f1db325d88a483e35bcdca0e98f588);
+            
+    
+            var marker_4e6aad46e4ffc7676a7d786cf8218f60 = L.marker(
+                [46.834232, 5.699728],
+                {
+}
+            ).addTo(feature_group_087c833914d2a9d578cfa8a16275f86c);
+        
+    
+            var icon_83bd1a5f0cce6f5c7ea731c9fecc5fd6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "landmark",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f7af29ac19f7b40d8dda758aa80ae19 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_0bc51ff64c46ce1abb743b644b221dec = $(`<div id="html_0bc51ff64c46ce1abb743b644b221dec" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Maison du Comté</b><br>         A Poligny, pour découvrir la fabrication du célèbre fromage     </div>     </div>`)[0];
+                popup_0f7af29ac19f7b40d8dda758aa80ae19.setContent(html_0bc51ff64c46ce1abb743b644b221dec);
+            
+        
+
+        marker_4e6aad46e4ffc7676a7d786cf8218f60.bindPopup(popup_0f7af29ac19f7b40d8dda758aa80ae19)
+        ;
+
+        
+    
+    
+                marker_4e6aad46e4ffc7676a7d786cf8218f60.setIcon(icon_83bd1a5f0cce6f5c7ea731c9fecc5fd6);
+            
+    
+            var marker_49524b2093bb12134d2c5c35ad8ce57c = L.marker(
+                [46.837591, 5.807245],
+                {
+}
+            ).addTo(feature_group_087c833914d2a9d578cfa8a16275f86c);
+        
+    
+            var icon_c111a0419cae3034a96fbd2ff8612469 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_06722fe1102ad4cd31ce1c46118873c9 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_91fefa52c36b2b09aded92690b9f9802 = $(`<div id="html_91fefa52c36b2b09aded92690b9f9802" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Grotte des Moidons</b><br>              </div>     </div>`)[0];
+                popup_06722fe1102ad4cd31ce1c46118873c9.setContent(html_91fefa52c36b2b09aded92690b9f9802);
+            
+        
+
+        marker_49524b2093bb12134d2c5c35ad8ce57c.bindPopup(popup_06722fe1102ad4cd31ce1c46118873c9)
+        ;
+
+        
+    
+    
+                marker_49524b2093bb12134d2c5c35ad8ce57c.setIcon(icon_c111a0419cae3034a96fbd2ff8612469);
+            
+    
+            feature_group_087c833914d2a9d578cfa8a16275f86c.addTo(map_cd4e6775addf21c3f2af50d9c9746168);
+        
+    
+            var feature_group_2d8eb81d23bb205da253a743fe2aee92 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_1ba6aabdd778278de9022e09114c46f0 = L.marker(
+                [46.96734, 6.010616],
+                {
+}
+            ).addTo(feature_group_2d8eb81d23bb205da253a743fe2aee92);
+        
+    
+            var icon_bbdce976cf3b6191ad0740acc0e4ca73 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f78d5e62f19f448a8bfc3d8a908d29bc = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_13d97f749e51720d3409f8c21aa8dff2 = $(`<div id="html_13d97f749e51720d3409f8c21aa8dff2" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Source du Lison</b><br>              </div>     </div>`)[0];
+                popup_f78d5e62f19f448a8bfc3d8a908d29bc.setContent(html_13d97f749e51720d3409f8c21aa8dff2);
+            
+        
+
+        marker_1ba6aabdd778278de9022e09114c46f0.bindPopup(popup_f78d5e62f19f448a8bfc3d8a908d29bc)
+        ;
+
+        
+    
+    
+                marker_1ba6aabdd778278de9022e09114c46f0.setIcon(icon_bbdce976cf3b6191ad0740acc0e4ca73);
+            
+    
+            var marker_fc44f3616ad2db5771639c9fc6490d46 = L.marker(
+                [46.946042, 5.878756],
+                {
+}
+            ).addTo(feature_group_2d8eb81d23bb205da253a743fe2aee92);
+        
+    
+            var icon_074ad05c2f5b695401eb8e361daec96d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "landmark",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_730c0f78ae95dc6141ab4db90b7bde90 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_9081aaeb3e774323df8d975b0df4698d = $(`<div id="html_9081aaeb3e774323df8d975b0df4698d" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Salins-les-Bains</b><br>         Ville thermale au riche patrimoine     </div>     </div>`)[0];
+                popup_730c0f78ae95dc6141ab4db90b7bde90.setContent(html_9081aaeb3e774323df8d975b0df4698d);
+            
+        
+
+        marker_fc44f3616ad2db5771639c9fc6490d46.bindPopup(popup_730c0f78ae95dc6141ab4db90b7bde90)
+        ;
+
+        
+    
+    
+                marker_fc44f3616ad2db5771639c9fc6490d46.setIcon(icon_074ad05c2f5b695401eb8e361daec96d);
+            
+    
+            var marker_21c294185d4b3f05c02a87708dd582d0 = L.marker(
+                [46.937408, 5.876606],
+                {
+}
+            ).addTo(feature_group_2d8eb81d23bb205da253a743fe2aee92);
+        
+    
+            var icon_503df03360009f3c303f096f4c8a5645 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "landmark",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_73b310e18dcaf362e0e175fc14438b19 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_b7d6d44446b4600bc9521806d8930ec3 = $(`<div id="html_b7d6d44446b4600bc9521806d8930ec3" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Grande Saline de Salins-les-Bains</b><br>         Site inscrit au patrimoine mondial     </div>     </div>`)[0];
+                popup_73b310e18dcaf362e0e175fc14438b19.setContent(html_b7d6d44446b4600bc9521806d8930ec3);
+            
+        
+
+        marker_21c294185d4b3f05c02a87708dd582d0.bindPopup(popup_73b310e18dcaf362e0e175fc14438b19)
+        ;
+
+        
+    
+    
+                marker_21c294185d4b3f05c02a87708dd582d0.setIcon(icon_503df03360009f3c303f096f4c8a5645);
+            
+    
+            feature_group_2d8eb81d23bb205da253a743fe2aee92.addTo(map_cd4e6775addf21c3f2af50d9c9746168);
+        
+    
+            var feature_group_63ddac7b405c382cf92eda7fe3fd6673 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_ef796d49abb7262e34559e7848cd4e1c = L.marker(
+                [46.462701, 6.029952],
+                {
+}
+            ).addTo(feature_group_63ddac7b405c382cf92eda7fe3fd6673);
+        
+    
+            var icon_7e3a6ab0584af9474c30c9800702bbb0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c5c44d7d3cb9a17e48a4e0e99032dcd5 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_5e0372d3a173f35b7f33b10fd3a16dff = $(`<div id="html_5e0372d3a173f35b7f33b10fd3a16dff" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Etape 1</b><br>         Prémanon     </div>     </div>`)[0];
+                popup_c5c44d7d3cb9a17e48a4e0e99032dcd5.setContent(html_5e0372d3a173f35b7f33b10fd3a16dff);
+            
+        
+
+        marker_ef796d49abb7262e34559e7848cd4e1c.bindPopup(popup_c5c44d7d3cb9a17e48a4e0e99032dcd5)
+        ;
+
+        
+    
+    
+                marker_ef796d49abb7262e34559e7848cd4e1c.setIcon(icon_7e3a6ab0584af9474c30c9800702bbb0);
+            
+    
+            var marker_46a6e614c9162d11ff80b567b33af7de = L.marker(
+                [46.669113, 5.552647],
+                {
+}
+            ).addTo(feature_group_63ddac7b405c382cf92eda7fe3fd6673);
+        
+    
+            var icon_5e96f62d0f10ae82ca91e12dd098c317 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8131d8096fcbfdeec439cc23b1750895 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_ed69efa0383ecf898d89afcc77d1a653 = $(`<div id="html_ed69efa0383ecf898d89afcc77d1a653" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Etape 2</b><br>         Lons-le-Saunier     </div>     </div>`)[0];
+                popup_8131d8096fcbfdeec439cc23b1750895.setContent(html_ed69efa0383ecf898d89afcc77d1a653);
+            
+        
+
+        marker_46a6e614c9162d11ff80b567b33af7de.bindPopup(popup_8131d8096fcbfdeec439cc23b1750895)
+        ;
+
+        
+    
+    
+                marker_46a6e614c9162d11ff80b567b33af7de.setIcon(icon_5e96f62d0f10ae82ca91e12dd098c317);
+            
+    
+            var marker_4f41ba8a9a746441701440d5c6234df6 = L.marker(
+                [46.953777, 6.117376],
+                {
+}
+            ).addTo(feature_group_63ddac7b405c382cf92eda7fe3fd6673);
+        
+    
+            var icon_6c4055eaa2e3c6b04c1044dd5ad014ca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c3449194c91383a26240d2c7f6335ebf = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_eb5b9ea31808cb69bff2d2188bb16d0d = $(`<div id="html_eb5b9ea31808cb69bff2d2188bb16d0d" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Etape 3</b><br>         Levier     </div>     </div>`)[0];
+                popup_c3449194c91383a26240d2c7f6335ebf.setContent(html_eb5b9ea31808cb69bff2d2188bb16d0d);
+            
+        
+
+        marker_4f41ba8a9a746441701440d5c6234df6.bindPopup(popup_c3449194c91383a26240d2c7f6335ebf)
+        ;
+
+        
+    
+    
+                marker_4f41ba8a9a746441701440d5c6234df6.setIcon(icon_6c4055eaa2e3c6b04c1044dd5ad014ca);
+            
+    
+            feature_group_63ddac7b405c382cf92eda7fe3fd6673.addTo(map_cd4e6775addf21c3f2af50d9c9746168);
+        
+    
+            var feature_group_12992beee7cb8a077b0f1610a9e3e99c = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_3f3c75b2f399ce2babef75defa7f0c87 = L.marker(
+                [46.334333, 5.630711],
+                {
+}
+            ).addTo(feature_group_12992beee7cb8a077b0f1610a9e3e99c);
+        
+    
+            var icon_dd763fa1eb0a203ec0f65b921b007322 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d45ab1ed7cdf088af88ce53ade3b9e3c = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_a733661054ae7488526e41e87a517fb6 = $(`<div id="html_a733661054ae7488526e41e87a517fb6" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Lac de Coiselet</b><br>              </div>     </div>`)[0];
+                popup_d45ab1ed7cdf088af88ce53ade3b9e3c.setContent(html_a733661054ae7488526e41e87a517fb6);
+            
+        
+
+        marker_3f3c75b2f399ce2babef75defa7f0c87.bindPopup(popup_d45ab1ed7cdf088af88ce53ade3b9e3c)
+        ;
+
+        
+    
+    
+                marker_3f3c75b2f399ce2babef75defa7f0c87.setIcon(icon_dd763fa1eb0a203ec0f65b921b007322);
+            
+    
+            var marker_d0b906f25ccddf1b2a06afd8a3c109cc = L.marker(
+                [46.270446, 5.93808],
+                {
+}
+            ).addTo(feature_group_12992beee7cb8a077b0f1610a9e3e99c);
+        
+    
+            var icon_639385579fce2777302f1e8c4e7ae9a3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d6c65ee04afcf6531b1478da8736e48 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_0c3a2d7f2f0f0b98a8eb5237e1ec8fef = $(`<div id="html_0c3a2d7f2f0f0b98a8eb5237e1ec8fef" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Crêt de la Neige</b><br>              </div>     </div>`)[0];
+                popup_5d6c65ee04afcf6531b1478da8736e48.setContent(html_0c3a2d7f2f0f0b98a8eb5237e1ec8fef);
+            
+        
+
+        marker_d0b906f25ccddf1b2a06afd8a3c109cc.bindPopup(popup_5d6c65ee04afcf6531b1478da8736e48)
+        ;
+
+        
+    
+    
+                marker_d0b906f25ccddf1b2a06afd8a3c109cc.setIcon(icon_639385579fce2777302f1e8c4e7ae9a3);
+            
+    
+            var marker_f19322f29732ba9c0162cec0af61a91c = L.marker(
+                [47.166332, 6.245751],
+                {
+}
+            ).addTo(feature_group_12992beee7cb8a077b0f1610a9e3e99c);
+        
+    
+            var icon_1f468e26057206d63f2ebd65b01f192b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_74d97ec4d33365281ff99759148af357 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_dba79fcd55effaeb46c3d88c930340e9 = $(`<div id="html_dba79fcd55effaeb46c3d88c930340e9" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Gouffre de Poudrey</b><br>              </div>     </div>`)[0];
+                popup_74d97ec4d33365281ff99759148af357.setContent(html_dba79fcd55effaeb46c3d88c930340e9);
+            
+        
+
+        marker_f19322f29732ba9c0162cec0af61a91c.bindPopup(popup_74d97ec4d33365281ff99759148af357)
+        ;
+
+        
+    
+    
+                marker_f19322f29732ba9c0162cec0af61a91c.setIcon(icon_1f468e26057206d63f2ebd65b01f192b);
+            
+    
+            var marker_c469bd8ba003f6ec78359138a68229d8 = L.marker(
+                [47.106797, 6.141426],
+                {
+}
+            ).addTo(feature_group_12992beee7cb8a077b0f1610a9e3e99c);
+        
+    
+            var icon_cd5f5c5b68ba138edcc5f5778906f310 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "landmark",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7961d200a86866e6a211a50690f84ee4 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_9330ac55e0183b7f9394e12f3e463e6c = $(`<div id="html_9330ac55e0183b7f9394e12f3e463e6c" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Ornans</b><br>              </div>     </div>`)[0];
+                popup_7961d200a86866e6a211a50690f84ee4.setContent(html_9330ac55e0183b7f9394e12f3e463e6c);
+            
+        
+
+        marker_c469bd8ba003f6ec78359138a68229d8.bindPopup(popup_7961d200a86866e6a211a50690f84ee4)
+        ;
+
+        
+    
+    
+                marker_c469bd8ba003f6ec78359138a68229d8.setIcon(icon_cd5f5c5b68ba138edcc5f5778906f310);
+            
+    
+            var marker_5093df5e1a0ad2f32107f1dd0f5fea63 = L.marker(
+                [47.096118, 5.495624],
+                {
+}
+            ).addTo(feature_group_12992beee7cb8a077b0f1610a9e3e99c);
+        
+    
+            var icon_5ae1cb95463d4c2cb4c3deb983b2d9b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "landmark",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b003cd7e1ca252bae5a63c714f995029 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_eda5c472888af6a6a964fa8516a14a1e = $(`<div id="html_eda5c472888af6a6a964fa8516a14a1e" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Dole</b><br>              </div>     </div>`)[0];
+                popup_b003cd7e1ca252bae5a63c714f995029.setContent(html_eda5c472888af6a6a964fa8516a14a1e);
+            
+        
+
+        marker_5093df5e1a0ad2f32107f1dd0f5fea63.bindPopup(popup_b003cd7e1ca252bae5a63c714f995029)
+        ;
+
+        
+    
+    
+                marker_5093df5e1a0ad2f32107f1dd0f5fea63.setIcon(icon_5ae1cb95463d4c2cb4c3deb983b2d9b2);
+            
+    
+            var marker_287ac2701bd0613c7cdba10606d2074f = L.marker(
+                [47.20036, 5.572289],
+                {
+}
+            ).addTo(feature_group_12992beee7cb8a077b0f1610a9e3e99c);
+        
+    
+            var icon_f1460e0eeb2f3052ad15b26698a48031 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1316c92ea67ba64147712f7d603282ea = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_7dd92641345f34eacbe2811b8412ea78 = $(`<div id="html_7dd92641345f34eacbe2811b8412ea78" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Massif de la Serre</b><br>              </div>     </div>`)[0];
+                popup_1316c92ea67ba64147712f7d603282ea.setContent(html_7dd92641345f34eacbe2811b8412ea78);
+            
+        
+
+        marker_287ac2701bd0613c7cdba10606d2074f.bindPopup(popup_1316c92ea67ba64147712f7d603282ea)
+        ;
+
+        
+    
+    
+                marker_287ac2701bd0613c7cdba10606d2074f.setIcon(icon_f1460e0eeb2f3052ad15b26698a48031);
+            
+    
+            var marker_7b820eada3efef728313e644920b509d = L.marker(
+                [47.26153, 5.656649],
+                {
+}
+            ).addTo(feature_group_12992beee7cb8a077b0f1610a9e3e99c);
+        
+    
+            var icon_b7d4ac3a52d98818aa13fb998da0f50a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_73b9b1c9bc53c9c8e5fcb1f4bac4880c = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_9c17740b81c41392321c25d41db5364b = $(`<div id="html_9c17740b81c41392321c25d41db5364b" style="width: 100.0%; height: 100.0%;">     <div style="font-size:14px; line-height:1.4;">         <b style="font-size:14px;">Abbaye d'Acey</b><br>              </div>     </div>`)[0];
+                popup_73b9b1c9bc53c9c8e5fcb1f4bac4880c.setContent(html_9c17740b81c41392321c25d41db5364b);
+            
+        
+
+        marker_7b820eada3efef728313e644920b509d.bindPopup(popup_73b9b1c9bc53c9c8e5fcb1f4bac4880c)
+        ;
+
+        
+    
+    
+                marker_7b820eada3efef728313e644920b509d.setIcon(icon_b7d4ac3a52d98818aa13fb998da0f50a);
+            
+    
+            feature_group_12992beee7cb8a077b0f1610a9e3e99c.addTo(map_cd4e6775addf21c3f2af50d9c9746168);
+        
+    
+        function geo_json_a7223abf4e35f074b301c9d60cc81c35_styler(feature) {
+            switch(feature.properties.code) {
+                default:
+                    return {"color": "#555555", "fill": false, "weight": 2};
+            }
+        }
+
+        function geo_json_a7223abf4e35f074b301c9d60cc81c35_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_a7223abf4e35f074b301c9d60cc81c35 = L.geoJson(null, {
+                onEachFeature: geo_json_a7223abf4e35f074b301c9d60cc81c35_onEachFeature,
+            
+                style: geo_json_a7223abf4e35f074b301c9d60cc81c35_styler,
+            ...{
+}
+        });
+
+        function geo_json_a7223abf4e35f074b301c9d60cc81c35_add (data) {
+            geo_json_a7223abf4e35f074b301c9d60cc81c35
+                .addData(data);
+        }
+            geo_json_a7223abf4e35f074b301c9d60cc81c35_add({"features": [{"geometry": {"coordinates": [[[5.5185372800929, 47.304183948833], [5.5232748679603, 47.305475313171], [5.5325465734396, 47.290563051661], [5.5341715527281, 47.283450701838], [5.5547357528367, 47.27999843245], [5.572094259787, 47.268439485834], [5.5744646217084, 47.254058031035], [5.5815498545659, 47.253139353829], [5.5911669138029, 47.259080466452], [5.6021061150272, 47.260527974194], [5.6231633057099, 47.255208344134], [5.6423010293029, 47.256186141259], [5.6526839162171, 47.264756696834], [5.6656763893789, 47.266318822653], [5.6759872373979, 47.275744771312], [5.6987272452696, 47.265000343118], [5.7196574167089, 47.240393529584], [5.7171076564753, 47.23299564261], [5.7204115628525, 47.219933082046], [5.7378824016408, 47.208883832309], [5.7398278721209, 47.201038563789], [5.7543562182361, 47.20614572363], [5.7607076259684, 47.20217591141], [5.7615854800525, 47.193348494233], [5.7807437061122, 47.192980985477], [5.7863565246694, 47.188084219493], [5.7860744752117, 47.177558359026], [5.811472582346, 47.169050988739], [5.8137909740309, 47.149846839884], [5.827306328055, 47.14254911162], [5.8160829426973, 47.134334882294], [5.8054098436194, 47.119258761879], [5.8021492858263, 47.11066783822], [5.7832195551564, 47.09624366995], [5.7722519645683, 47.09486136967], [5.7685434263991, 47.089434266457], [5.7786114797683, 47.074770571137], [5.7799376281429, 47.063610139342], [5.7847160202443, 47.054913241204], [5.763387093616, 47.044835754153], [5.7456009113306, 47.057249694456], [5.7369607236255, 47.049807327539], [5.7527262522254, 47.039795055844], [5.7501649678587, 47.033703118269], [5.740849651432, 47.031142758696], [5.7495148138703, 47.017244251927], [5.7631634923394, 47.0113904386], [5.7702296182778, 47.017932649609], [5.7876490641526, 47.020606883184], [5.7986375638838, 47.029686865519], [5.7971469497964, 47.042338209885], [5.8158126764714, 47.045781800815], [5.8150520653853, 47.020342660386], [5.8286441496403, 47.012164289689], [5.851748315587, 47.006597305776], [5.860805619626, 47.007715477722], [5.8817587510691, 47.005044433844], [5.8866227813731, 46.996969338727], [5.9110757735042, 46.999497387461], [5.9150032244474, 46.987308302623], [5.9435872836268, 46.98054854349], [5.968563083074, 46.980447122058], [5.975687606681, 46.975854084501], [5.9729390451722, 46.969276607259], [5.9797832488435, 46.963475945672], [5.9664518538116, 46.954037738921], [5.9640762528681, 46.948078452327], [5.9791301258507, 46.939766948061], [5.9967921639228, 46.933125372159], [5.9826064111012, 46.919753175451], [5.9856936195365, 46.906145471864], [6.0000629144227, 46.896186112826], [6.0084286313536, 46.895557865571], [6.0117200011004, 46.888923174244], [6.0057824486729, 46.873054533872], [6.0206735851666, 46.868100918927], [6.0327205442291, 46.870907067247], [6.0242086777367, 46.855468333834], [6.0340130724844, 46.849595790775], [6.047894270997, 46.848624239765], [6.0680701595708, 46.858460884974], [6.083730222322, 46.851419391489], [6.0910071683215, 46.841859266961], [6.1056795866935, 46.845204396114], [6.1171190503892, 46.834244144073], [6.1341958499901, 46.826068437822], [6.1517911997737, 46.820664742672], [6.1492882107225, 46.815883590897], [6.1632378106454, 46.8035284185], [6.1757183241917, 46.800243889843], [6.2033299339615, 46.772681384866], [6.2026525525133, 46.762301114569], [6.185266031767, 46.755141237425], [6.1802695893085, 46.741573475312], [6.1399453541345, 46.725268446673], [6.1129539816939, 46.707747239466], [6.0698260174554, 46.68952765456], [6.0868868292495, 46.672260499977], [6.1037735049255, 46.649817333346], [6.1000606874326, 46.643454999445], [6.0868627501584, 46.638891197306], [6.059175829941, 46.626107264362], [6.0583329740831, 46.617540436267], [6.048568006745, 46.607719222344], [6.0684058243104, 46.595948015094], [6.0999852394696, 46.573743234661], [6.1304724861572, 46.553996454277], [6.138105886557, 46.557659570871], [6.1564422357855, 46.545471592105], [6.1528479944668, 46.536134657174], [6.1446024516564, 46.528393629454], [6.1378590985632, 46.530871419262], [6.1126938080715, 46.509641497594], [6.0968277794178, 46.481208813072], [6.0739298928675, 46.463949535302], [6.0744598322778, 46.453664090185], [6.0843910990454, 46.447437001059], [6.0858348949625, 46.440994445768], [6.0747681070246, 46.431630995903], [6.064005627331, 46.416222559892], [6.0551820813125, 46.414801045991], [6.0480752195777, 46.405125490757], [6.0295137846375, 46.38681604791], [6.0106565375389, 46.374508650286], [5.9868463201736, 46.364869353266], [5.9729173069373, 46.346856233903], [5.9535602724875, 46.326531457174], [5.9414094008927, 46.309446510031], [5.9259040835744, 46.313765646046], [5.9185184907402, 46.307199659115], [5.9089357776791, 46.283950786541], [5.8946251190123, 46.286607913138], [5.8791206347196, 46.269936490689], [5.8702488945181, 46.265305590806], [5.8643332109856, 46.271208875005], [5.8498475590074, 46.262067170418], [5.8212837267024, 46.262094109034], [5.7656471814788, 46.268294754652], [5.7459179055539, 46.266368533117], [5.7251818400017, 46.260731935709], [5.720112401844, 46.265870062788], [5.7160491956243, 46.279915646538], [5.7192939761881, 46.293462363342], [5.714721806193, 46.308772354673], [5.6845768021754, 46.310927537001], [5.6833466019044, 46.316276892818], [5.6684418272398, 46.324369189279], [5.6529045876259, 46.323214774673], [5.6493445080392, 46.339494512081], [5.6419584041921, 46.342028332374], [5.6305151249665, 46.330204693001], [5.6176441912887, 46.329091983869], [5.610460815624, 46.324211378495], [5.59838931795, 46.298445925032], [5.5855011829326, 46.292557783319], [5.5663641424008, 46.294050213862], [5.5581274576637, 46.282173642648], [5.5420340189851, 46.270203795698], [5.5129432911698, 46.264539612518], [5.4995891133957, 46.268200455579], [5.4730515403718, 46.265066548043], [5.4568426743662, 46.274473574235], [5.4595129521644, 46.290471994825], [5.4674037740958, 46.295566233017], [5.4753005499335, 46.315382606424], [5.4669175767252, 46.323267248222], [5.4377949533958, 46.315109371064], [5.4278984240109, 46.342210714821], [5.4170861726833, 46.339534237431], [5.4102335548466, 46.30910668308], [5.4046508439018, 46.310338173994], [5.4042931339536, 46.332813029221], [5.3992759574473, 46.339521371463], [5.3819165667023, 46.345255630996], [5.3734648101425, 46.352234450451], [5.3770544086974, 46.364113395825], [5.362996992744, 46.370926983475], [5.3770431289975, 46.381355482485], [5.3552221284773, 46.39375452396], [5.3525084400185, 46.397586033829], [5.331272401231, 46.399499315198], [5.3147703161373, 46.40947618293], [5.3076872001929, 46.416819197974], [5.308978572395, 46.424532251303], [5.3194882695109, 46.430803499916], [5.3105633704742, 46.446769968334], [5.3231451264737, 46.456478982676], [5.3233470518352, 46.462506037791], [5.3733086058294, 46.460102440011], [5.388506199686, 46.468564619365], [5.3975202395847, 46.466656047847], [5.4157407818816, 46.473142287102], [5.4209987260656, 46.485402729497], [5.4195457769452, 46.502301459279], [5.405972822918, 46.501480763488], [5.3946761409067, 46.505960131498], [5.3848165687083, 46.51562164374], [5.3688458099145, 46.516135590158], [5.359197282296, 46.522558128915], [5.362532641349, 46.551955983714], [5.3602943181469, 46.562706895384], [5.3676455411539, 46.56753131305], [5.3621183709734, 46.577266498184], [5.3752066392179, 46.580159450218], [5.3976477370739, 46.579829483685], [5.4134417713639, 46.60042718918], [5.3985819483749, 46.612532369876], [5.4171049356193, 46.615454549879], [5.4375286482801, 46.629847215753], [5.4411065155678, 46.637538242564], [5.4154976516957, 46.654978931388], [5.4266257666834, 46.659810286536], [5.4220848047125, 46.673033412338], [5.3953606617938, 46.685052412753], [5.4077513434675, 46.695884065976], [5.4063157263802, 46.704025277789], [5.394582119336, 46.710598146417], [5.3965438211421, 46.716352209475], [5.3910888917579, 46.728698245923], [5.3612646423948, 46.731562182096], [5.3663650761211, 46.751279477853], [5.385508776198, 46.762069728324], [5.3902478807842, 46.770586580904], [5.3804825411024, 46.776338304427], [5.3693431489209, 46.778660208918], [5.3566637043011, 46.789799874683], [5.3401395358873, 46.790820312845], [5.33292755524, 46.796095104705], [5.3285848429923, 46.812954827447], [5.3403852843483, 46.82115377823], [5.3515685001072, 46.813567110147], [5.3702436483657, 46.826173086426], [5.3888320313816, 46.826669468844], [5.4098269851133, 46.832545203525], [5.4169768776707, 46.826815586408], [5.4351093990058, 46.826754678964], [5.4567694196974, 46.83096747796], [5.4622983197648, 46.838687292645], [5.4592877768562, 46.855245657553], [5.4467832086153, 46.860312646063], [5.4376109899408, 46.85601497291], [5.4146973689037, 46.862363178473], [5.4018235507818, 46.868321978157], [5.4042545538339, 46.877575497225], [5.3998079308442, 46.881340792386], [5.4038429343802, 46.8895159374], [5.3907640809284, 46.894366911749], [5.3633736848055, 46.88325738824], [5.3519717132024, 46.892332830917], [5.3392796011353, 46.889650370665], [5.328668893399, 46.89427196578], [5.3169631943363, 46.904052477048], [5.3070069943341, 46.923576065792], [5.3084905287746, 46.937356553152], [5.2892527667604, 46.941274764889], [5.2747709784723, 46.934849244786], [5.2632632275105, 46.935908986811], [5.2601642133516, 46.945577835787], [5.2642267089187, 46.959043180772], [5.2548827302617, 46.971636367009], [5.2552323566327, 46.97988727181], [5.2719597499439, 46.989340780889], [5.2788707280445, 46.999021373722], [5.297162784202, 47.001432869677], [5.3100551650812, 47.018024391224], [5.2753306362771, 47.026929459444], [5.2829162271068, 47.045235150189], [5.3024269639937, 47.061073135449], [5.3121920596159, 47.059984591599], [5.3221915911089, 47.072984795346], [5.3325351466998, 47.076541416218], [5.3451278583998, 47.076663031205], [5.3594637559913, 47.080823441413], [5.3725869511884, 47.077870600995], [5.3860185078759, 47.081977874128], [5.3978169308403, 47.100525534369], [5.3982339482394, 47.105510493744], [5.4106582397347, 47.11409272206], [5.4087066418684, 47.126073355091], [5.4153451965153, 47.132557909226], [5.4283101123348, 47.136621644761], [5.4399772978447, 47.144398007823], [5.4382559628791, 47.152333633289], [5.4486451687776, 47.159661416687], [5.4592047704778, 47.183435455006], [5.4566619914314, 47.190796043521], [5.4457479059859, 47.199576602968], [5.4643347179423, 47.206861190005], [5.4766297124338, 47.216024943562], [5.4740109657345, 47.231084915051], [5.4825740827176, 47.239584618039], [5.4859533367952, 47.250970971888], [5.482780235717, 47.259970325137], [5.4878159593397, 47.273607055705], [5.4882803585045, 47.289348426854], [5.5047334725938, 47.285657287521], [5.5185372800929, 47.304183948833]]], "type": "Polygon"}, "properties": {"code": "39", "nom": "Jura"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_a7223abf4e35f074b301c9d60cc81c35.addTo(map_cd4e6775addf21c3f2af50d9c9746168);
+        
+    
+            var layer_control_70fa9844f8450e327f4e1e6a7c67f5cb_layers = {
+                base_layers : {
+                    "OSM" : tile_layer_fce47b37a88a6a540960b69a8bd84ad8,
+                    "Topo" : tile_layer_82f86557e70a38bb4d2977c0f0ec1941,
+                    "Satellite" : tile_layer_ec5e4f1ec52b7fd33a70f0da1e44e7dd,
+                },
+                overlays :  {
+                    "\u003cspan style=\"color:purple;\"\u003eJour 1\u003c/span\u003e" : feature_group_499b50a88da4d7206c778fe065022108,
+                    "\u003cspan style=\"color:green;\"\u003eJour 2\u003c/span\u003e" : feature_group_bedd483c976137b6bb83a2e08ca31d1d,
+                    "\u003cspan style=\"color:orange;\"\u003eJour 3\u003c/span\u003e" : feature_group_09aaf31fbeef32a58973cb02645727c8,
+                    "\u003cspan style=\"color:cadetblue;\"\u003eJour 4\u003c/span\u003e" : feature_group_83999cc4d806224dc00585b3cbb18485,
+                    "\u003cspan style=\"color:pink;\"\u003eJour 5\u003c/span\u003e" : feature_group_d30309ce410356e77432cee542ee3493,
+                    "\u003cspan style=\"color:red;\"\u003eJour 6\u003c/span\u003e" : feature_group_759bdeb183d9de3aa5bfc4a1f5919746,
+                    "\u003cspan style=\"color:lightgray;\"\u003eJour 7\u003c/span\u003e" : feature_group_087c833914d2a9d578cfa8a16275f86c,
+                    "\u003cspan style=\"color:darkgreen;\"\u003eJour 8\u003c/span\u003e" : feature_group_2d8eb81d23bb205da253a743fe2aee92,
+                    "\u003cspan style=\"color:blue;\"\u003eH\u00e9bergements\u003c/span\u003e" : feature_group_63ddac7b405c382cf92eda7fe3fd6673,
+                    "\u003cspan style=\"color:gray;\"\u003eAutres\u003c/span\u003e" : feature_group_12992beee7cb8a077b0f1610a9e3e99c,
+                    "Jura" : geo_json_a7223abf4e35f074b301c9d60cc81c35,
+                },
+            };
+            let layer_control_70fa9844f8450e327f4e1e6a7c67f5cb = L.control.layers(
+                layer_control_70fa9844f8450e327f4e1e6a7c67f5cb_layers.base_layers,
+                layer_control_70fa9844f8450e327f4e1e6a7c67f5cb_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_cd4e6775addf21c3f2af50d9c9746168);
+
+        
+</script>
+</html>
